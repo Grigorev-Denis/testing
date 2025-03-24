@@ -9,5 +9,10 @@ public class Main {
         d2.breed = "Мопс";
         d2.color = "Серый";
         d2.getCount();
+
+        Dog d3 = new Dog();
+        d3.breed = "Овчакра";
+        d3.color = "Коричневый";
+        d3.getCount();
     }
 }
