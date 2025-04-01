@@ -9,7 +9,7 @@ public class Main {
                 secondWord = word;
                 StringBuilder builder = new StringBuilder(secondWord);
                 builder.insert(3, " ");
-                builder.replace(1,2, "О");
+                //builder.replace(1,2, "О");
                 result = builder.toString();
                 break;
             }
