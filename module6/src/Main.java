@@ -25,7 +25,7 @@ public class Main {
     }
 
 
-    public static void getRandomWord(String[] words){    // сделал статическим чтобы не создавать экземпляр класса Main
+    public static void getRandomWord(String[] words){
         int a = 0;  // диапазон "от"
         int b = words.length - 1; // диапазон "до", вычитаем 1, т.к это будет последним индексом массива
         int randomIndex = a + (int)(Math.random() * ((b - a) + 1)); // рандомное число, которое будет индексом массива
