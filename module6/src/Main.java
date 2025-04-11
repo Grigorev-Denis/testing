@@ -1,6 +1,8 @@
+
+
 public class Main {
     public static void main(String[] args) {
-        String[]arr = {"привет","ПоЛкА","гипербола"};
+        String[] arr = {"привет","ПоЛкА","гипербола"};
         String secondWord ;
         String result = "Слов с буквой 'О' не найдено";
         for (String word: arr){
@@ -19,5 +21,15 @@ public class Main {
         System.out.println(arr[0].toUpperCase());
         System.out.println(arr[1].toLowerCase());
         System.out.println(result);
+        getRandomWord(arr);
     }
+
+
+    public static void getRandomWord(String[] words){    // сделал статическим чтобы не создавать экземпляр класса Main
+        int a = 0;  // доапазон "от"
+        int b = words.length - 1; // доапазон "до", вычитаем 1, т.к это будет последним индексом массива
+        int randomIndex = a + (int)(Math.random() * ((b - a) + 1)); // рандомное число, которое будет индексом массива
+        System.out.println(words[randomIndex]);
+    }
+
 }
